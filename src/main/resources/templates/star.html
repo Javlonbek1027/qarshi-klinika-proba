@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href=
+                  "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+          rel="stylesheet"/>
+    <script src=
+                    "https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity=
+                    "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
+    </script>
+    <script src=
+                    "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
+    </script>
+</head>
+
+<body>
+<div class="ui container">
+    <h2 style="color:green">GeeksforGeeks</h2>
+    <b>
+
+        <p>Semantic UI star rating type.</p>
+
+    </b>
+    <br/>
+
+    <p>
+        On a rate of 1-10 how much would you
+        recommend GFG to your colleague ?
+    </p>
+
+
+    <br/>
+    <div class="ui star rating"
+         data-rating="7"
+         data-max-rating="10"></div>
+    <script>
+        $('.rating').rating();
+    </script>
+</div>
+</body>
+
+</html>

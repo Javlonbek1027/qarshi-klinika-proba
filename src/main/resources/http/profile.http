@@ -1,0 +1,58 @@
+###✔
+POST http://localhost:8080/auth/login
+Accept-Language: UZ
+Content-Type: application/json
+
+{
+  "email": "obotayev@gmail.com",
+  "password": "3433"
+}
+
+###✔
+POST http://localhost:8080/profile/admin/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzE5ODAzMzcsImVtYWlsIjoianNob2JvdGF5ZXZAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2NzIwNjY3MzcsImlzcyI6InlvdXR1YmUgdGVzdCBwb3J0YWwifQ.HBH_NThJL7EN8OvrPDPwRLljU9NOVZzGwx6iYDg-LzNbhA_z3nD2fV4I0m677ZBOcP6aI6m4RIYP0nM2OAU6ug
+Content-Type: application/json
+
+{
+  "name": "dfghj",
+  "surname": "dfghj",
+  "status": "ACTIVE",
+  "role": "ROLE_MODERATOR",
+  "email": "shobotayev@gmail.com",
+  "password": "3434"
+}
+###✔
+GET http://localhost:8080/profile/info/1
+
+###
+POST http://localhost:8080/auth/registration
+Content-Type: application/json
+
+{
+  "name": "dfghj",
+  "surname": "dfghj",
+  "email": "jshobotayev@gmail.com"
+}
+
+###
+GET http://localhost:8080/profile/update/password
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzI5MjAxMzUsImVtYWlsIjoianNob2JvdGF5ZXZAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2NzMwMDY1MzUsImlzcyI6InlvdXR1YmUgdGVzdCBwb3J0YWwifQ.4KYj2nSecKQJHrXARDV1TSKN1EMr24uuB68nKfYczbmZ0RU1LYkz7G0PffgdBAxkpVZY5SgzvNLJs4IWfuYmSA
+
+###
+PUT http://localhost:8080/profile/update/password/result
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzI5MjIwNzcsImVtYWlsIjoianNob2JvdGF5ZXZAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2NzMwMDg0NzcsImlzcyI6InlvdXR1YmUgdGVzdCBwb3J0YWwifQ.XG55-pIWZ6g20fGPohT4njF-yYvmz2Jgga-1MfGSXds4EFx0i6mXL6Fjbd7dVge9-w7c6relFt9sf_uYVD5UYg
+Content-Type: application/json
+
+{
+  "email": "jshobotayev@gmail.com",
+  "password": "3434"
+}
+###
+PUT http://localhost:8080/profile/update/password/detail/result
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NzI5MjQwNTcsImVtYWlsIjoib2JvdGF5ZXZAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfTU9ERVJBVE9SIiwiZXhwIjoxNjczMDEwNDU3LCJpc3MiOiJ5b3V0dWJlIHRlc3QgcG9ydGFsIn0.DGnmUlT2ysiVZK2ebW7Sdyb8tdkRQIMAdhKeyVurTrj_navEp7GqM23Ym5hzWW243i2tGBnCpWd6Bm7fb1Voog
+Content-Type: application/json
+
+{
+  "name": "Shag'zodbek",
+  "surname": "Shobo'tayev"
+}

@@ -1,0 +1,21 @@
+### registration
+POST localhost:8080/auth/registration
+Content-Type: application/json
+
+{
+   "name":"Bahora",
+   "surname": "Rustamova",
+    "email": "doniyorcoder2@gmail.com",
+     "password": "12345",
+    "mainPhotoId": "3a138ceb-54a0-49c7-be4e-16a4e5b8fa90"
+}
+
+### login
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "jshobotayev@gmail.com",
+  "password": "3433"
+}
